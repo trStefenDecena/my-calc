@@ -8,8 +8,18 @@ function Button({textValue = 'A'}) {
   }
 
   return (
-    <button onClick={handleClick}>{textValue}</button>
+    <button onClick={handleClick}>
+    {textValue}
+    </button>
   );
+
+  const numberClickHandler = (e) => {
+    e.preventDefault();
+    const value = e.target.innerHTML;
+    console.log(textValue);
+    alert(textValue)
+  };
+  
 }
 
 function InputField() {
