@@ -36,14 +36,28 @@ function App() {
     // alert(value);
     
     if (operator != null) {
-      let cumulativeValue = num2 + value;
-      setNum2(cumulativeValue);
-      setDisp(cumulativeValue);
+      if (num2 == "0") {
+        setNum2(value);
+        setDisp(value);
+      }
+      else {
+        let cumulativeValue = num2 + value;
+        setNum2(cumulativeValue);
+        setDisp(cumulativeValue);
+      }
     }
+
     else {
-      let cumulativeValue = num1 + value
-      setNum1(cumulativeValue);
-      setDisp(cumulativeValue);
+      if (num1 == "0") {
+        setNum1(value);
+        setDisp(value);
+      }
+      else {
+        let cumulativeValue = num1 + value
+        setNum1(cumulativeValue);
+        setDisp(cumulativeValue);
+      }
+      
     }
 
 
@@ -73,10 +87,10 @@ function App() {
       case "+":
         setDisp(iNum1 + iNum2);
         break;
-      case "–":
+      case "-":
         setDisp(iNum1 - iNum2);
         break;
-      case "X":
+      case "*":
         setDisp(iNum1 * iNum2);
         break;
       case "/":
@@ -101,12 +115,12 @@ function App() {
         <Button textValue="4" onClick={numberClickHandler}/>
         <Button textValue="5" onClick={numberClickHandler}/>
         <Button textValue="6" onClick={numberClickHandler}/>
-        <Button textValue="X" onClick={opClickHandler}/>
+        <Button textValue="*" onClick={opClickHandler}/>
 
         <Button textValue="1" onClick={numberClickHandler}/>
         <Button textValue="2" onClick={numberClickHandler}/>
         <Button textValue="3" onClick={numberClickHandler}/>
-        <Button textValue="–" onClick={opClickHandler}/>
+        <Button textValue="-" onClick={opClickHandler}/>
 
         <Button textValue="CLR" onClick={clearClickHandler}/>
         <Button textValue="0" onClick={numberClickHandler}/>
