@@ -1,49 +1,48 @@
-export function Button(textValue = 'A') {
+import logo from './logo.svg';
+import './App.css';
+
+function Button({textValue = 'A'}) {
   return (
-    <button>
-      {}
-    </button>
+    <button>{textValue}</button>
   );
 }
 
-export function NumberField() {
+function InputField() {
   return (
-    <input type="text" placeholder="0"> </input>
+    <input type="text" placeholder='0'></input>
   );
 }
 
-export function NumberButton(numValue = '0') {
+function ButtonGroup() {
   return (
-      <Button>{numValue}</Button>
-  );
-}
-
-
-export function ButtonGroup() {
-  return(
     <div>
-      <NumberButton numValue={'7'} />
-      <NumberButton numValue={'8'} />
-      <NumberButton numValue={'9'} />
-      <NumberButton numValue={'4'} />
-      <NumberButton numValue={'5'} />
-      <NumberButton numValue={'6'} />
-      <NumberButton numValue={'1'} />
-      <NumberButton numValue={'2'} />
-      <NumberButton numValue={'3'} />
-    
+      <Button textValue="7"/>
+      <Button textValue="8"/>
+      <Button textValue="9"/>
+      <Button textValue="/"/>
+      <Button textValue="4"/>
+      <Button textValue="5"/>
+      <Button textValue="6"/>
+      <Button textValue="X"/>
+      <Button textValue="1"/>
+      <Button textValue="2"/>
+      <Button textValue="3"/>
+      <Button textValue="-"/>
+      <Button textValue="CLR"/>
+      <Button textValue="0"/>
+      <Button textValue="="/>
+      <Button textValue="+"/>
     </div>
-    
   );
 }
 
 function App() {
   return (
-    <div className="App">123
-      <NumberField />
+    <div className="App">
+      <InputField />
       <ButtonGroup />
     </div>
   );
 }
 
-export default container;
+export default App;
