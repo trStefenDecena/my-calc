@@ -1,13 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
 
-function NumberField() {
+export function NumberField() {
   return (
     <input type="text" placeholder="0"> </input>
   );
 }
 
-function NumberButton(numValue = '0') {
+export function NumberButton(numValue = '0') {
   return (
     <div>
       <Button>{numValue}</Button>
@@ -16,7 +16,7 @@ function NumberButton(numValue = '0') {
 }
 
 
-function ButtonGroup() {
+export function ButtonGroup() {
   return(
     <div>
       <NumberButton numValue={'7'} />
