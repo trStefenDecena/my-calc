@@ -50,8 +50,8 @@ function App() {
   };
 
   const clearClickHandler = () => {
-    setNum1(0);
-    setNum2(0);
+    setNum1("0");
+    setNum2("0");
     setDisp("0");
     setOp(null);
     console.log(disp);
