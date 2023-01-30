@@ -4,8 +4,7 @@ import './App.css';
 function Button({textValue = 'A'}) {
   
   function handleClick() {
-    let message = {textValue};
-    alert(message);
+    alert(textValue);
   }
 
   return (
