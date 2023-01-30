@@ -1,5 +1,10 @@
-import logo from './logo.svg';
-import './App.css';
+export function Button(textValue = 'A') {
+  return (
+    <button>
+      {}
+    </button>
+  );
+}
 
 export function NumberField() {
   return (
@@ -9,9 +14,7 @@ export function NumberField() {
 
 export function NumberButton(numValue = '0') {
   return (
-    <div>
       <Button>{numValue}</Button>
-    </div>
   );
 }
 
@@ -36,7 +39,7 @@ export function ButtonGroup() {
 
 function App() {
   return (
-    <div className="App">
+    <div className="App">123
       <NumberField />
       <ButtonGroup />
     </div>
