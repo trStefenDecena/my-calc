@@ -2,8 +2,14 @@ import logo from './logo.svg';
 import './App.css';
 
 function Button({textValue = 'A'}) {
+  
+  function handleClick() {
+    let message = {textValue};
+    alert(message);
+  }
+
   return (
-    <button>{textValue}</button>
+    <button onClick={handleClick}>{textValue}</button>
   );
 }
 
@@ -13,13 +19,6 @@ function InputField() {
   );
 }
 
-function ButtonGroup() {
-  return (
-    <div>
-
-    </div>
-  );
-}
 
 function App() {
   return (
