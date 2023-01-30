@@ -9,7 +9,9 @@ function NumberField() {
 
 function NumberButton(numValue = '0') {
   return (
-    <div>{numValue}</div>
+    <div>
+      <button>{numValue}</button>
+    </div>
   );
 }
 
