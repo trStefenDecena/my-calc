@@ -73,7 +73,7 @@ function App() {
       case "+":
         setDisp(iNum1 + iNum2);
         break;
-      case "-":
+      case "–":
         setDisp(iNum1 - iNum2);
         break;
       case "X":
@@ -106,7 +106,7 @@ function App() {
         <Button textValue="1" onClick={numberClickHandler}/>
         <Button textValue="2" onClick={numberClickHandler}/>
         <Button textValue="3" onClick={numberClickHandler}/>
-        <Button textValue="-" onClick={opClickHandler}/>
+        <Button textValue="–" onClick={opClickHandler}/>
 
         <Button textValue="CLR" onClick={clearClickHandler}/>
         <Button textValue="0" onClick={numberClickHandler}/>
