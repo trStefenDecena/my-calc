@@ -83,20 +83,26 @@ function App() {
     let iNum1 = parseInt(num1);
     let iNum2 = parseInt(num2);
 
+    let result = 0;
     switch(operator) {
       case "+":
-        setDisp(iNum1 + iNum2);
+        result = iNum1 + iNum2;
         break;
       case "-":
-        setDisp(iNum1 - iNum2);
+        result = iNum1 - iNum2;
         break;
       case "*":
-        setDisp(iNum1 * iNum2);
+        result = iNum1 * iNum2;
         break;
       case "/":
-        setDisp(iNum1 / iNum2);
+        result = iNum1 / iNum2;
         break;
     }
+
+    setDisp(result);
+    setNum1(result);
+    setNum2(0);
+    setOp(null);
   }
 
   return (
